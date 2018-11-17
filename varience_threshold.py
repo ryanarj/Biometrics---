@@ -1,8 +1,6 @@
 # File for the varience threshold feature selection algorithm
 import numpy as np
 from sklearn.feature_selection import VarianceThreshold
-from sklearn.pipeline import Pipeline
-
 
 def varience_threshold(data):
     varience = np.var(data)
