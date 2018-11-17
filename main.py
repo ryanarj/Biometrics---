@@ -47,7 +47,7 @@ stat, p, dof, expected = cs.chi_square(raw_data)
 print("Total number of raw rows: ", len(raw_data))
 
 ## Perform feature selection
-# varience_threshold_features = []
+varience_threshold_features = [vt.varience_threshold(raw_data)]
 # pca_threshold_features = []
 # minimum_subset_features = []
 
