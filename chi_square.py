@@ -20,7 +20,7 @@ def get_features(raw_data, raw_ids, alpha=0.33):
 		# Calculate statistics
 		X = df[column].astype(str)
 		Y = df["person"].astype(str)
-		df_observed = pd.crosstab(X, Y) 
+		df_observed = pd.crosstab(X, Y)
 		chi2, p, dof, expected = chi2_contingency(df_observed.values)
 
 		# Decide to keep column
